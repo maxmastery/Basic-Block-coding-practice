@@ -4,10 +4,13 @@ import { audio } from './utils/audio';
 
 export default function Landing({ onStart }: { onStart: () => void }) {
   return (
-    <div 
-      className="min-h-screen bg-cover bg-center bg-no-repeat flex items-end justify-center pb-24"
-      style={{ backgroundImage: `url('https://drive.google.com/thumbnail?id=1fr4YbLdZ4eAVX-pXjxtMQg99q_ISa3ZK&sz=w1920')` }}
-    >
+    <div className="relative min-h-screen flex items-end justify-center pb-24 overflow-hidden">
+      <img 
+        src="https://drive.google.com/thumbnail?id=1fr4YbLdZ4eAVX-pXjxtMQg99q_ISa3ZK&sz=w1920" 
+        alt="Background" 
+        className="absolute inset-0 w-full h-full object-cover -z-10"
+        referrerPolicy="no-referrer"
+      />
       <button 
         onClick={() => {
           audio.playClick();
