@@ -8,7 +8,7 @@ export default function Landing({ onStart }: { onStart: () => void }) {
       <img 
         src="https://drive.google.com/thumbnail?id=1fr4YbLdZ4eAVX-pXjxtMQg99q_ISa3ZK&sz=w1920" 
         alt="Background" 
-        className="absolute inset-0 w-full h-full object-cover -z-10"
+        className="absolute inset-0 w-full h-full object-cover object-top -z-10"
         referrerPolicy="no-referrer"
       />
       <button 
